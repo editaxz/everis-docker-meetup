@@ -1,4 +1,4 @@
-# DOCKER ECOSYSTEM
+# DOCKER INTRODUCTION
 
 ## Imagen and container
 ### Pull an nginx imagen 
@@ -30,10 +30,24 @@ https://hub.docker.com/
 ```
 
 ## DockerFile
+
+### Ejemplo01
 ### Create dockerfile , build and create the container
 ```
 sudo nano dockerfile
-docker build -t editaxz/apache .
+docker build -t editaxz/surprise_image .
+docker run -it editaxz/surprise_image
+```
+### When you have enough, hold
+```
+ctrl + ]
+```
+
+### Ejemplo02
+### Create dockerfile , build and create the container
+```
+sudo nano dockerfile
+docker build -d -t editaxz/apache .
 docker run --name apache -d -p 90:80 editaxz/apache
 ```
 ### Verify apache
